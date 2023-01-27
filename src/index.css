@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   /* barlow-600 - latin */
+   @font-face {
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 600;
+      src: local(""), url("../fonts/barlow-v12-latin-600.woff2") format("woff2");
+   }
+
+   /* fraunces-700 - latin */
+   @font-face {
+      font-family: "Fraunces";
+      font-style: normal;
+      font-weight: 700;
+      src: local(""),
+         url("../fonts/fraunces-v26-latin-700.woff2") format("woff2");
+   }
+
+   /* fraunces-900 - latin */
+   @font-face {
+      font-family: "Fraunces";
+      font-style: normal;
+      font-weight: 900;
+      src: local(""),
+         url("../fonts/fraunces-v26-latin-900.woff2") format("woff2");
+   }
+
+   h1 {
+      @apply absolute top-[27%] z-10 w-full text-center font-fraunces text-[40px] font-black leading-[49px] tracking-[6.25px] text-white md:top-[24%] md:text-[48px] md:leading-[69px] md:tracking-[8.75px] lg:text-[56px];
+   }
+   h2 {
+      @apply font-fraunces text-[32px] font-black leading-[39.5px] tracking-[-0.23px] md:text-[40px] md:leading-[49.3px] md:tracking-[-0.29px];
+   }
+   h3 {
+      @apply font-fraunces text-[28px]  font-black leading-[34px] tracking-[-0.2px];
+   }
+}
